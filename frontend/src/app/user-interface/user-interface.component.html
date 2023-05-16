@@ -1,0 +1,10 @@
+<form (ngSubmit)="submitForm>" <label for="nickname"> Nickname: </label>
+
+    <input type:"text" id="nickname" [(ngModel)]="nickname" required>
+
+    <label for="message"> Message: </label>
+    <input type:"text" id="message" [(ngModel)]="message" required>
+
+    <button type="submit">Sent the Message</button>
+
+</form>

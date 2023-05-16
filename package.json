@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.1.2"
+  },
+  "dependencies": {
+    "@angular/core": "^16.0.1",
+    "@angular/platform-browser-dynamic": "^16.0.1"
+  }
+}
