@@ -24,7 +24,7 @@ export class AlienService {
   getData(): Observable<any> {
 
     //return the result of the get request
-    return this.http.get(".messages");
+    return this.http.get("./messages");
   }
 
   /**
