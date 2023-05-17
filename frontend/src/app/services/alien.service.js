@@ -60,7 +60,8 @@ exports.AlienService = (() => {
          *
          */
         getData() {
-            return this.http.get(".messages");
+            //return the result of the get request
+            return this.http.get("./messages");
         }
         /**
          *
@@ -68,6 +69,7 @@ exports.AlienService = (() => {
         sendData(data) {
             //add api.key to http-header
             const headers = new http_1.HttpHeaders().set("x-api-key", "your-api-key");
+            //send the post request
             this.http.post("./messages", data, { headers }).subscribe(error => { console.error(error); });
             //return the data which were successfully transmitted
             return data;

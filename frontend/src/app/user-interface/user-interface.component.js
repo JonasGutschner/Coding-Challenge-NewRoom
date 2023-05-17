@@ -63,6 +63,7 @@ exports.UserInterfaceComponent = (() => {
             };
             //add api.key to http-header
             const headers = new http_1.HttpHeaders().set("x-api-key", "your-api-key");
+            //send the data to the backend  endpoint
             this.http.post("./messages", Data, { headers }).subscribe(error => { console.error(error); });
         }
     };
